@@ -16,29 +16,31 @@
                     <img src="narutogif.gif" alt="RasenShuriken" id="naruto2">
                 </div>
             </header>
+
+            
         
             <img src="konoha.png" alt="Konoha Logo" id="konoha">
-            <img src="3sannins.jpg" alt="Sannins" id="sanins">
+            <img src="3sannins.jpg" alt="Sannins" id="3sanins" class="sanins">
             <img src="konoha.png" alt="Konoha Logo" id="konoha2">
             
             <div class="quest">
                 <div class="topic1">
                     <p class="question">You are</p>
-                    <button class="answer" onclick="timer()">Cherrful</button>
-                    <button class="answer" onclick="timer()">Normal</button>
-                    <button class="answer" onclick="timer()">Calm</button>
+                    <button class="answer" onclick="timer(), addAnswer()" id="answer1">Cherrful</button>
+                    <button class="answer" onclick="timer(), addAnswer2()" id="answer2">Normal</button>
+                    <button class="answer" onclick="timer(), addAnswer3()" id="answer3">Calm</button>
                 </div>
                 <div class="topic2">
                     <p class="question">Your attitude is more</p>
-                    <button class="answer" onclick="timer2()">Positive</button>
-                    <button class="answer" onclick="timer2()">Realistic</button>
-                    <button class="answer" onclick="timer2()">Negative</button>
+                    <button class="answer" onclick="timer2(), addAnswer4() " id="answer4">Positive</button>
+                    <button class="answer" onclick="timer2(), addAnswer5()" id="answer5">Realistic</button>
+                    <button class="answer" onclick="timer2(), addAnswer6()" id="answer6">Negative</button>
                 </div>
                 <div class="topic3">
                         <p class="question">Your fighting style is</p>
-                        <button class="answer">Taijutsu</button>
-                        <button class="answer">Ninjutsu</button>
-                        <button class="answer">Strategy</button>
+                        <button class="answer" onclick="addAnswer7(), comparing() " id="answer7">Taijutsu</button>
+                        <button class="answer" onclick="addAnswer8(), comparing() " id="answer8">Ninjutsu</button>
+                        <button class="answer" onclick="addAnswer9(), comparing() " id="answer9">Strategy</button>
                     </div>
         </div>
 
