@@ -87,19 +87,17 @@ function result(sanin) {
 
 // This function compares the user answers to the 3 Sanins
 function comparing() {
-    if (answers[1] == jiraya[1] && answers[2] == jiraya[2] || answers[2] == jiraya [2] && answers[3] == jiraya[3] || answers[1] == jiraya [1] && answers[3] == jiraya[3]) {
+    if (answers[0] == jiraya[0] && answers[1] == jiraya[1] || answers[1] == jiraya [1] && answers[2] == jiraya[2] || answers[0] == jiraya [0] && answers[2] == jiraya[2]) {
     create('jiraya.jpg')
     result('Jiraya')
-    }
-    
-
-    if (answers[1] == tsunade[1] && answers[2] == tsunade[2] || answers[2] == tsunade [2] && answers[3] == tsunade[3] || answers[1] == tsunade [1] && answers[3] == tsunade[3]) {
+    } else if (answers[0] == tsunade[0] && answers[1] == tsunade[1] || answers[1] == tsunade [1] && answers[2] == tsunade[2] || answers[0] == tsunade [0] && answers[2] == tsunade[2]) {
         create('tsunade.jpg')
         result('Tsunade')
-    }
-
-    if (answers[1] == orochimaru[1] && answers[2] == orochimaru[2] || answers[2] == orochimaru [2] && answers[3] == orochimaru[3] || answers[1] == orochimaru [1] && answers[3] == orochimaru[3]) {
+    } else if (answers[0] == orochimaru[0] && answers[1] == orochimaru[1] || answers[1] == orochimaru [1] && answers[2] == orochimaru[2] || answers[0] == orochimaru [0] && answers[2] == orochimaru[2]) {
         create('orochimaru.jpg')
         result('Orochimaru')
+    } else {
+        create('fail.jpg')
+        result('None')
     }
-}
+} 
